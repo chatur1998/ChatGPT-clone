@@ -12,7 +12,6 @@ This project is a front-end clone of the ChatGPT interface built using React, Vi
 
 ### Features
 
-- **Dynamic Input Resizing**: The input box resizes based on the text content up to a maximum height.
 - **File Upload**: Users can upload files via the input area.
 - **Message Copying**: Users can copy the content of messages to the clipboard.
 - **Chat History**: Maintains a record of conversations in a left pane.
@@ -35,6 +34,12 @@ The project is structured to keep the code modular and maintainable. Key compone
 - **Tailwind CSS**: Tailwind CSS is used for styling, allowing for rapid and responsive UI development.
 - **Responsive Design**: The UI is designed to be responsive, ensuring a good user experience on both desktop and mobile devices.
 - **Dummy API Simulation**: Simulates API responses to demonstrate how the chat interface would work with real backend data.
+
+### Deployment
+
+The project is deployed on Vercel and can be accessed via the following link:
+
+[https://dummy-chat-gpt.vercel.app/](https://dummy-chat-gpt.vercel.app/)
 
 ### Installation
 
