@@ -3,7 +3,7 @@ import { List } from "antd";
 import { MessageOutlined } from "@ant-design/icons";
 import ChatListHeader from "./ChatListHeader";
 
-interface ChatListProps {
+type ChatListProps = {
   chats: { id: number; title: string }[];
   activeChatId: number;
   onSelectChat: (id: number) => void;

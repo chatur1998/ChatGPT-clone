@@ -1,5 +1,6 @@
-export const sendMessageToApi = async (): Promise<{ response: string }> => {
+export const sendMessageToApi = async (message: string): Promise<{ response: string }> => {
   // Simulate an API call with a different response
+  console.log('user message to API', message);
   return new Promise((resolve) => {
     setTimeout(() => {
       const responses = [

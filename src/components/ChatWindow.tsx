@@ -12,7 +12,7 @@ import {
 } from "@ant-design/icons";
 import ChatHeader from "./ChatHeader";
 
-interface ChatWindowProps {
+type ChatWindowProps = {
   messages: { sender: string; text: string }[];
   onSendMessage: (message: string) => void;
   onRegenerateResponse: () => void;
