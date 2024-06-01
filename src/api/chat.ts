@@ -1,6 +1,4 @@
-import axios from 'axios';
-
-export const sendMessageToApi = async (message: string): Promise<{ response: string }> => {
+export const sendMessageToApi = async (): Promise<{ response: string }> => {
   // Simulate an API call with a different response
   return new Promise((resolve) => {
     setTimeout(() => {
