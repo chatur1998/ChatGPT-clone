@@ -65,14 +65,4 @@ The application will be available at `http://localhost:3000`.
 - Click the plus icon next to the input field to upload a file.
 - Click the copy icon below a system message to copy the message to the clipboard.
 
-### Contributing
-
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, feel free to open an issue or submit a pull request.
-
-### License
-
-This project is licensed under the MIT License.
-
----
-
 This README provides an overview of the project, including the tech stack, features, installation instructions, and usage guidelines. The project demonstrates best practices such as modularization, use of TypeScript, and UI consistency with Ant Design and Tailwind CSS.
