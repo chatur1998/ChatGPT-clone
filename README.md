@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
+## ChatGPT Clone with React, Vite, and TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a front-end clone of the ChatGPT interface built using React, Vite, and TypeScript. It leverages Ant Design for UI components and Tailwind CSS for styling. The project includes features like file upload and message copying.
 
-Currently, two official plugins are available:
+### Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Ant Design (Antd)**: A comprehensive UI framework for React.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-## Expanding the ESLint configuration
+### Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Dynamic Input Resizing**: The input box resizes based on the text content up to a maximum height.
+- **File Upload**: Users can upload files via the input area.
+- **Message Copying**: Users can copy the content of messages to the clipboard.
+- **Chat History**: Maintains a record of conversations in a left pane.
+- **Fixed Input Area**: The input area is fixed to the bottom of the page, while the chat window scrolls.
 
-- Configure the top-level `parserOptions` property like this:
+### Project Structure
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+The project is structured to keep the code modular and maintainable. Key components are separated into their own files:
+
+- **`ChatWindow.tsx`**: Handles the main chat interface.
+- **`ChatHeader.tsx`**: Displays the header of the chat window.
+- **`ChatList.tsx`**: Displays the list of chats on the left pane.
+- **`App.tsx`**: Main application component that brings everything together.
+
+### Good Practices
+
+- **Modular Code**: The code is split into reusable components, making it easier to manage and scale.
+- **TypeScript**: Utilizes TypeScript for type safety, which helps in catching errors early and improving code quality.
+- **Ant Design**: Uses Ant Design components for a consistent and professional UI.
+- **Tailwind CSS**: Tailwind CSS is used for styling, allowing for rapid and responsive UI development.
+- **Responsive Design**: The UI is designed to be responsive, ensuring a good user experience on both desktop and mobile devices.
+- **Dummy API Simulation**: Simulates API responses to demonstrate how the chat interface would work with real backend data.
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/chatgpt-clone.git
+cd chatgpt-clone
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`.
+
+### Usage
+
+- Type a message in the input field and press Enter or click the send button to send the message.
+- Click the plus icon next to the input field to upload a file.
+- Click the copy icon below a system message to copy the message to the clipboard.
+
+This README provides an overview of the project, including the tech stack, features, installation instructions, and usage guidelines. The project demonstrates best practices such as modularization, use of TypeScript, and UI consistency with Ant Design and Tailwind CSS.
