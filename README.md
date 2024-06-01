@@ -32,7 +32,6 @@ The project is structured to keep the code modular and maintainable. Key compone
 - **TypeScript**: Utilizes TypeScript for type safety, which helps in catching errors early and improving code quality.
 - **Ant Design**: Uses Ant Design components for a consistent and professional UI.
 - **Tailwind CSS**: Tailwind CSS is used for styling, allowing for rapid and responsive UI development.
-- **Responsive Design**: The UI is designed to be responsive, ensuring a good user experience on both desktop and mobile devices.
 - **Dummy API Simulation**: Simulates API responses to demonstrate how the chat interface would work with real backend data.
 
 ### Deployment
